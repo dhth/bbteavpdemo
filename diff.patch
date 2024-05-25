@@ -1,0 +1,1076 @@
+commit 491eda41276c3419d519bc8c622725fa587b7e37
+Author: Dane Schneider <dane.schneider@gmail.com>
+Date:   Mon Apr 1 13:37:55 2024 -0700
+
+    docs(readme): add plandex to 'In the Wild' (#971)
+
+diff --git a/README.md b/README.md
+index b61b94d..39b22f3 100644
+--- a/README.md
++++ b/README.md
+@@ -374,20 +374,21 @@ For some Bubble Tea programs in production, see:
+ * [mc](https://github.com/minio/mc): the official [MinIO](https://min.io) client
+ * [mergestat](https://github.com/mergestat/mergestat): run SQL queries on git repositories
+ * [meteor](https://github.com/stefanlogue/meteor): a highly customizable conventional commit message tool
+ * [mods](https://github.com/charmbracelet/mods): AI on the CLI, built for pipelines
+ * [nachrichten](https://github.com/zMoooooritz/nachrichten): access up-to-date news in German provided by the [Tagesschau](https://www.tagesschau.de/)
+ * [Neon Modem Overdrive](https://github.com/mrusme/neonmodem): a BBS-style TUI client for Discourse, Lemmy, Lobste.rs and Hacker News
+ * [nom](https://github.com/guyfedwards/nom): an RSS reader and manager
+ * [Noted](https://github.com/torbratsberg/noted): a note viewer and manager
+ * [outtasync](https://github.com/dhth/outtasync): identify CloudFormation stacks that are out of sync with their template files
+ * [pathos](https://github.com/chip/pathos): a PATH environment variable editor
++* [Plandex](https://github.com/plandex-ai/plandex): a terminal-based AI coding engine for complex tasks
+ * [portal](https://github.com/ZinoKader/portal): secure transfers between computers
+ * [puffin](https://github.com/siddhantac/puffin): a TUI for hledger to manage your finances
+ * [punchout](https://github.com/dhth/punchout): takes the suck out of logging time on JIRA
+ * [redis-viewer](https://github.com/SaltFishPr/redis-viewer): a Redis database browser
+ * [redis_tui](https://github.com/mat2cc/redis_tui): a Redis database browser
+ * [schemas](https://github.com/dhth/schemas): lets you inspect postgres schemas in the terminal
+ * [scrabbler](https://github.com/wI2L/scrabbler): an automatic draw tool for your duplicate Scrabble games
+ * [sku](https://github.com/fedeztk/sku): Sudoku on the CLI
+ * [Slides](https://github.com/maaslalani/slides): a markdown-based presentation tool
+ * [SlurmCommander](https://github.com/CLIP-HPC/SlurmCommander): a Slurm workload manager TUI
+
+commit 60dd2ad1246a3da18a754081fed59b3dc098cfcc
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Mar 27 13:51:07 2024 -0400
+
+    chore(deps): bump github.com/charmbracelet/lipgloss in /examples (#941)
+    
+    Bumps [github.com/charmbracelet/lipgloss](https://github.com/charmbracelet/lipgloss) from 0.9.1 to 0.10.0.
+    - [Release notes](https://github.com/charmbracelet/lipgloss/releases)
+    - [Commits](https://github.com/charmbracelet/lipgloss/compare/v0.9.1...v0.10.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/charmbracelet/lipgloss
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+diff --git a/examples/go.mod b/examples/go.mod
+index b1d95ca..c66d532 100644
+--- a/examples/go.mod
++++ b/examples/go.mod
+@@ -1,20 +1,20 @@
+ module examples
+ 
+ go 1.18
+ 
+ require (
+ 	github.com/charmbracelet/bubbles v0.18.0
+ 	github.com/charmbracelet/bubbletea v0.25.0
+ 	github.com/charmbracelet/glamour v0.7.0
+ 	github.com/charmbracelet/harmonica v0.2.0
+-	github.com/charmbracelet/lipgloss v0.9.1
++	github.com/charmbracelet/lipgloss v0.10.0
+ 	github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516
+ 	github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776
+ 	github.com/lucasb-eyer/go-colorful v1.2.0
+ 	github.com/mattn/go-isatty v0.0.20
+ )
+ 
+ require (
+ 	github.com/alecthomas/chroma/v2 v2.8.0 // indirect
+ 	github.com/atotto/clipboard v0.1.4 // indirect
+ 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
+@@ -26,21 +26,21 @@ require (
+ 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
+ 	github.com/gorilla/css v1.0.0 // indirect
+ 	github.com/mattn/go-localereader v0.0.1 // indirect
+ 	github.com/mattn/go-runewidth v0.0.15 // indirect
+ 	github.com/microcosm-cc/bluemonday v1.0.25 // indirect
+ 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
+ 	github.com/muesli/cancelreader v0.2.2 // indirect
+ 	github.com/muesli/reflow v0.3.0 // indirect
+ 	github.com/muesli/termenv v0.15.2 // indirect
+ 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+-	github.com/rivo/uniseg v0.4.6 // indirect
++	github.com/rivo/uniseg v0.4.7 // indirect
+ 	github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f // indirect
+ 	github.com/yuin/goldmark v1.5.4 // indirect
+ 	github.com/yuin/goldmark-emoji v1.0.2 // indirect
+ 	golang.org/x/net v0.17.0 // indirect
+ 	golang.org/x/sync v0.6.0 // indirect
+ 	golang.org/x/sys v0.17.0 // indirect
+ 	golang.org/x/term v0.17.0 // indirect
+ 	golang.org/x/text v0.13.0 // indirect
+ )
+ 
+diff --git a/examples/go.sum b/examples/go.sum
+index d926e42..a1f3242 100644
+--- a/examples/go.sum
++++ b/examples/go.sum
+@@ -1,30 +1,31 @@
++github.com/acarl005/stripansi v0.0.0-20180116102854-5a71ef0e047d h1:licZJFw2RwpHMqeKTCYkitsPqHNxTmd4SNR5r94FGM8=
+ github.com/alecthomas/assert/v2 v2.2.1 h1:XivOgYcduV98QCahG8T5XTezV5bylXe+lBxLG2K2ink=
+ github.com/alecthomas/chroma/v2 v2.8.0 h1:w9WJUjFFmHHB2e8mRpL9jjy3alYDlU0QLDezj1xE264=
+ github.com/alecthomas/chroma/v2 v2.8.0/go.mod h1:yrkMI9807G1ROx13fhe1v6PN2DDeaR73L3d+1nmYQtw=
+ github.com/alecthomas/repr v0.2.0 h1:HAzS41CIzNW5syS8Mf9UwXhNH1J9aix/BvDRf1Ml2Yk=
+ github.com/atotto/clipboard v0.1.4 h1:EH0zSVneZPSuFR11BlR9YppQTVDbh5+16AmcJi4g1z4=
+ github.com/atotto/clipboard v0.1.4/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
+ github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=
+ github.com/aymanbagabas/go-osc52/v2 v2.0.1/go.mod h1:uYgXzlJ7ZpABp8OJ+exZzJJhRNQ2ASbcXHWsFqH8hp8=
+ github.com/aymanbagabas/go-udiff v0.2.0 h1:TK0fH4MteXUDspT88n8CKzvK0X9O2xu9yQjWpi6yML8=
+ github.com/aymanbagabas/go-udiff v0.2.0/go.mod h1:RE4Ex0qsGkTAJoQdQQCA0uG+nAzJO/pI/QwceO5fgrA=
+ github.com/aymerick/douceur v0.2.0 h1:Mv+mAeH1Q+n9Fr+oyamOlAkUNPWPlA8PPGR0QAaYuPk=
+ github.com/aymerick/douceur v0.2.0/go.mod h1:wlT5vV2O3h55X9m7iVYN0TBM0NH/MmbLnd30/FjWUq4=
+ github.com/charmbracelet/bubbles v0.18.0 h1:PYv1A036luoBGroX6VWjQIE9Syf2Wby2oOl/39KLfy0=
+ github.com/charmbracelet/bubbles v0.18.0/go.mod h1:08qhZhtIwzgrtBjAcJnij1t1H0ZRjwHyGsy6AL11PSw=
+ github.com/charmbracelet/glamour v0.7.0 h1:2BtKGZ4iVJCDfMF229EzbeR1QRKLWztO9dMtjmqZSng=
+ github.com/charmbracelet/glamour v0.7.0/go.mod h1:jUMh5MeihljJPQbJ/wf4ldw2+yBP59+ctV36jASy7ps=
+ github.com/charmbracelet/harmonica v0.2.0 h1:8NxJWRWg/bzKqqEaaeFNipOu77YR5t8aSwG4pgaUBiQ=
+ github.com/charmbracelet/harmonica v0.2.0/go.mod h1:KSri/1RMQOZLbw7AHqgcBycp8pgJnQMYYT8QZRqZ1Ao=
+-github.com/charmbracelet/lipgloss v0.9.1 h1:PNyd3jvaJbg4jRHKWXnCj1akQm4rh8dbEzN1p/u1KWg=
+-github.com/charmbracelet/lipgloss v0.9.1/go.mod h1:1mPmG4cxScwUQALAAnacHaigiiHB9Pmr+v1VEawJl6I=
++github.com/charmbracelet/lipgloss v0.10.0 h1:KWeXFSexGcfahHX+54URiZGkBFazf70JNMtwg/AFW3s=
++github.com/charmbracelet/lipgloss v0.10.0/go.mod h1:Wig9DSfvANsxqkRsqj6x87irdy123SR4dOXlKa91ciE=
+ github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8 h1:kyT+aGp1z5jwlus3OY0cP6FuT05jYeeExx/4TYxnyrs=
+ github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8/go.mod h1:wDlXFlCrmJ8J+swcL/MnGUuYnqgQdW9rhSD61oNMb6U=
+ github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516 h1:7IZFEUZpEgjlTSd7P1MRRhGXs7t4F6mENeMw17TxnQs=
+ github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516/go.mod h1:SG24wGkG/mix5V2dZLXfQ6Bod43HGvk9CkTDxATwKN4=
+ github.com/dlclark/regexp2 v1.4.0 h1:F1rxgk7p4uKjwIQxBs9oAXe5CqrXlCduYEJvrF4u93E=
+ github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
+ github.com/dustin/go-humanize v1.0.1 h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=
+ github.com/dustin/go-humanize v1.0.1/go.mod h1:Mu1zIs6XwVuF/gI1OepvI0qD18qycQx+mFykh5fBlto=
+ github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f h1:Y/CXytFA4m6baUTXGLOoWe4PQhGxaX0KpnayAqC48p4=
+ github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f/go.mod h1:vw97MGsxSvLiUE2X8qFplwetxpGLQrlU1Q9AUEIzCaM=
+@@ -51,22 +52,22 @@ github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6/go.mod h1:CJlz5H+gyd6C
+ github.com/muesli/cancelreader v0.2.2 h1:3I4Kt4BQjOR54NavqnDogx/MIoWBFa0StPA8ELUXHmA=
+ github.com/muesli/cancelreader v0.2.2/go.mod h1:3XuTXfFS2VjM+HTLZY9Ak0l6eUKfijIfMUZ4EgX0QYo=
+ github.com/muesli/reflow v0.3.0 h1:IFsN6K9NfGtjeggFP+68I4chLZV2yIKsXJFNZ+eWh6s=
+ github.com/muesli/reflow v0.3.0/go.mod h1:pbwTDkVPibjO2kyvBQRBxTWEEGDGq0FlB1BIKtnHY/8=
+ github.com/muesli/termenv v0.15.2 h1:GohcuySI0QmI3wN8Ok9PtKGkgkFIk7y6Vpb5PvrY+Wo=
+ github.com/muesli/termenv v0.15.2/go.mod h1:Epx+iuz8sNs7mNKhxzH4fWXGNpZwUaJKRS1noLXviQ8=
+ github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
+ github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
+ github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
+ github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
+-github.com/rivo/uniseg v0.4.6 h1:Sovz9sDSwbOz9tgUy8JpT+KgCkPYJEN/oYzlJiYTNLg=
+-github.com/rivo/uniseg v0.4.6/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUcx88=
++github.com/rivo/uniseg v0.4.7 h1:WUdvkW8uEhrYfLC4ZzdpI2ztxP1I582+49Oc5Mq64VQ=
++github.com/rivo/uniseg v0.4.7/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUcx88=
+ github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f h1:MvTmaQdww/z0Q4wrYjDSCcZ78NoftLQyHBSLW/Cx79Y=
+ github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f/go.mod h1:VFvziUEIMCrT6A6tw2RFIXPXXmzXbOsSHF0DOI8ZK9Y=
+ github.com/yuin/goldmark v1.3.7/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
+ github.com/yuin/goldmark v1.5.4 h1:2uY/xC0roWy8IBEGLgB1ywIoEJFGmRrX21YQcvGZzjU=
+ github.com/yuin/goldmark v1.5.4/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
+ github.com/yuin/goldmark-emoji v1.0.2 h1:c/RgTShNgHTtc6xdz2KKI74jJr6rWi7FPgnP9GAsO5s=
+ github.com/yuin/goldmark-emoji v1.0.2/go.mod h1:RhP/RWpexdp+KHs7ghKnifRoIs/Bq4nDS7tRbCkOwKY=
+ golang.org/x/net v0.17.0 h1:pVaXccu2ozPjCXewfr1S7xza/zcXTity9cCdXQYSjIM=
+ golang.org/x/net v0.17.0/go.mod h1:NxSsAGuq816PNPmqtQdLE42eU2Fs7NoRIZrHJAlaCOE=
+ golang.org/x/sync v0.6.0 h1:5BMeUDZ7vkXGfEr1x9B4bRcTH4lpkTkpdh0T/J+qjbQ=
+
+commit 711eaf8b81ebea817d02ae8415d7344538f4a957
+Author: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+Date:   Wed Mar 27 13:34:04 2024 -0400
+
+    chore(deps): bump github.com/charmbracelet/glamour in /examples (#967)
+    
+    Bumps [github.com/charmbracelet/glamour](https://github.com/charmbracelet/glamour) from 0.6.0 to 0.7.0.
+    - [Release notes](https://github.com/charmbracelet/glamour/releases)
+    - [Commits](https://github.com/charmbracelet/glamour/compare/v0.6.0...v0.7.0)
+    
+    ---
+    updated-dependencies:
+    - dependency-name: github.com/charmbracelet/glamour
+      dependency-type: direct:production
+      update-type: version-update:semver-minor
+    ...
+    
+    Signed-off-by: dependabot[bot] <support@github.com>
+    Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+diff --git a/examples/go.mod b/examples/go.mod
+index 26f09e0..b1d95ca 100644
+--- a/examples/go.mod
++++ b/examples/go.mod
+@@ -1,47 +1,47 @@
+ module examples
+ 
+ go 1.18
+ 
+ require (
+ 	github.com/charmbracelet/bubbles v0.18.0
+ 	github.com/charmbracelet/bubbletea v0.25.0
+-	github.com/charmbracelet/glamour v0.6.0
++	github.com/charmbracelet/glamour v0.7.0
+ 	github.com/charmbracelet/harmonica v0.2.0
+ 	github.com/charmbracelet/lipgloss v0.9.1
+ 	github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516
+ 	github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776
+ 	github.com/lucasb-eyer/go-colorful v1.2.0
+ 	github.com/mattn/go-isatty v0.0.20
+ )
+ 
+ require (
+-	github.com/alecthomas/chroma v0.10.0 // indirect
++	github.com/alecthomas/chroma/v2 v2.8.0 // indirect
+ 	github.com/atotto/clipboard v0.1.4 // indirect
+ 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
+ 	github.com/aymanbagabas/go-udiff v0.2.0 // indirect
+ 	github.com/aymerick/douceur v0.2.0 // indirect
+ 	github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8 // indirect
+ 	github.com/dlclark/regexp2 v1.4.0 // indirect
+ 	github.com/dustin/go-humanize v1.0.1 // indirect
+ 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
+ 	github.com/gorilla/css v1.0.0 // indirect
+ 	github.com/mattn/go-localereader v0.0.1 // indirect
+ 	github.com/mattn/go-runewidth v0.0.15 // indirect
+-	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
++	github.com/microcosm-cc/bluemonday v1.0.25 // indirect
+ 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
+ 	github.com/muesli/cancelreader v0.2.2 // indirect
+ 	github.com/muesli/reflow v0.3.0 // indirect
+ 	github.com/muesli/termenv v0.15.2 // indirect
+ 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+ 	github.com/rivo/uniseg v0.4.6 // indirect
+ 	github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f // indirect
+-	github.com/yuin/goldmark v1.5.2 // indirect
+-	github.com/yuin/goldmark-emoji v1.0.1 // indirect
++	github.com/yuin/goldmark v1.5.4 // indirect
++	github.com/yuin/goldmark-emoji v1.0.2 // indirect
+ 	golang.org/x/net v0.17.0 // indirect
+ 	golang.org/x/sync v0.6.0 // indirect
+ 	golang.org/x/sys v0.17.0 // indirect
+ 	golang.org/x/term v0.17.0 // indirect
+ 	golang.org/x/text v0.13.0 // indirect
+ )
+ 
+ replace github.com/charmbracelet/bubbletea => ../
+diff --git a/examples/go.sum b/examples/go.sum
+index ac642c5..d926e42 100644
+--- a/examples/go.sum
++++ b/examples/go.sum
+@@ -1,100 +1,81 @@
+-github.com/alecthomas/chroma v0.10.0 h1:7XDcGkCQopCNKjZHfYrNLraA+M7e0fMiJ/Mfikbfjek=
+-github.com/alecthomas/chroma v0.10.0/go.mod h1:jtJATyUxlIORhUOFNA9NZDWGAQ8wpxQQqNSB4rjA/1s=
++github.com/alecthomas/assert/v2 v2.2.1 h1:XivOgYcduV98QCahG8T5XTezV5bylXe+lBxLG2K2ink=
++github.com/alecthomas/chroma/v2 v2.8.0 h1:w9WJUjFFmHHB2e8mRpL9jjy3alYDlU0QLDezj1xE264=
++github.com/alecthomas/chroma/v2 v2.8.0/go.mod h1:yrkMI9807G1ROx13fhe1v6PN2DDeaR73L3d+1nmYQtw=
++github.com/alecthomas/repr v0.2.0 h1:HAzS41CIzNW5syS8Mf9UwXhNH1J9aix/BvDRf1Ml2Yk=
+ github.com/atotto/clipboard v0.1.4 h1:EH0zSVneZPSuFR11BlR9YppQTVDbh5+16AmcJi4g1z4=
+ github.com/atotto/clipboard v0.1.4/go.mod h1:ZY9tmq7sm5xIbd9bOK4onWV4S6X0u6GY7Vn0Yu86PYI=
+-github.com/aymanbagabas/go-osc52 v1.0.3/go.mod h1:zT8H+Rk4VSabYN90pWyugflM3ZhpTZNC7cASDfUCdT4=
+ github.com/aymanbagabas/go-osc52/v2 v2.0.1 h1:HwpRHbFMcZLEVr42D4p7XBqjyuxQH5SMiErDT4WkJ2k=
+ github.com/aymanbagabas/go-osc52/v2 v2.0.1/go.mod h1:uYgXzlJ7ZpABp8OJ+exZzJJhRNQ2ASbcXHWsFqH8hp8=
+ github.com/aymanbagabas/go-udiff v0.2.0 h1:TK0fH4MteXUDspT88n8CKzvK0X9O2xu9yQjWpi6yML8=
+ github.com/aymanbagabas/go-udiff v0.2.0/go.mod h1:RE4Ex0qsGkTAJoQdQQCA0uG+nAzJO/pI/QwceO5fgrA=
+ github.com/aymerick/douceur v0.2.0 h1:Mv+mAeH1Q+n9Fr+oyamOlAkUNPWPlA8PPGR0QAaYuPk=
+ github.com/aymerick/douceur v0.2.0/go.mod h1:wlT5vV2O3h55X9m7iVYN0TBM0NH/MmbLnd30/FjWUq4=
+ github.com/charmbracelet/bubbles v0.18.0 h1:PYv1A036luoBGroX6VWjQIE9Syf2Wby2oOl/39KLfy0=
+ github.com/charmbracelet/bubbles v0.18.0/go.mod h1:08qhZhtIwzgrtBjAcJnij1t1H0ZRjwHyGsy6AL11PSw=
+-github.com/charmbracelet/glamour v0.6.0 h1:wi8fse3Y7nfcabbbDuwolqTqMQPMnVPeZhDM273bISc=
+-github.com/charmbracelet/glamour v0.6.0/go.mod h1:taqWV4swIMMbWALc0m7AfE9JkPSU8om2538k9ITBxOc=
++github.com/charmbracelet/glamour v0.7.0 h1:2BtKGZ4iVJCDfMF229EzbeR1QRKLWztO9dMtjmqZSng=
++github.com/charmbracelet/glamour v0.7.0/go.mod h1:jUMh5MeihljJPQbJ/wf4ldw2+yBP59+ctV36jASy7ps=
+ github.com/charmbracelet/harmonica v0.2.0 h1:8NxJWRWg/bzKqqEaaeFNipOu77YR5t8aSwG4pgaUBiQ=
+ github.com/charmbracelet/harmonica v0.2.0/go.mod h1:KSri/1RMQOZLbw7AHqgcBycp8pgJnQMYYT8QZRqZ1Ao=
+ github.com/charmbracelet/lipgloss v0.9.1 h1:PNyd3jvaJbg4jRHKWXnCj1akQm4rh8dbEzN1p/u1KWg=
+ github.com/charmbracelet/lipgloss v0.9.1/go.mod h1:1mPmG4cxScwUQALAAnacHaigiiHB9Pmr+v1VEawJl6I=
+ github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8 h1:kyT+aGp1z5jwlus3OY0cP6FuT05jYeeExx/4TYxnyrs=
+ github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8/go.mod h1:wDlXFlCrmJ8J+swcL/MnGUuYnqgQdW9rhSD61oNMb6U=
+ github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516 h1:7IZFEUZpEgjlTSd7P1MRRhGXs7t4F6mENeMw17TxnQs=
+ github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516/go.mod h1:SG24wGkG/mix5V2dZLXfQ6Bod43HGvk9CkTDxATwKN4=
+-github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+-github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+-github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+ github.com/dlclark/regexp2 v1.4.0 h1:F1rxgk7p4uKjwIQxBs9oAXe5CqrXlCduYEJvrF4u93E=
+ github.com/dlclark/regexp2 v1.4.0/go.mod h1:2pZnwuY/m+8K6iRw6wQdMtk+rH5tNGR1i55kozfMjCc=
+ github.com/dustin/go-humanize v1.0.1 h1:GzkhY7T5VNhEkwH0PVJgjz+fX1rhBrR7pRT3mDkpeCY=
+ github.com/dustin/go-humanize v1.0.1/go.mod h1:Mu1zIs6XwVuF/gI1OepvI0qD18qycQx+mFykh5fBlto=
+ github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f h1:Y/CXytFA4m6baUTXGLOoWe4PQhGxaX0KpnayAqC48p4=
+ github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f/go.mod h1:vw97MGsxSvLiUE2X8qFplwetxpGLQrlU1Q9AUEIzCaM=
+ github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776 h1:VRIbnDWRmAh5yBdz+J6yFMF5vso1It6vn+WmM/5l7MA=
+ github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776/go.mod h1:9wvnDu3YOfxzWM9Cst40msBF1C2UdQgDv962oTxSuMs=
+ github.com/gorilla/css v1.0.0 h1:BQqNyPTi50JCFMTw/b67hByjMVXZRwGha6wxVGkeihY=
+ github.com/gorilla/css v1.0.0/go.mod h1:Dn721qIggHpt4+EFCcTLTU/vk5ySda2ReITrtgBl60c=
++github.com/hexops/gotextdiff v1.0.3 h1:gitA9+qJrrTCsiCl7+kh75nPqQt1cx4ZkudSTLoUqJM=
+ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0SNc=
+ github.com/lucasb-eyer/go-colorful v1.2.0 h1:1nnpGOrhyZZuNyfu1QjKiUICQ74+3FNCN69Aj6K7nkY=
+ github.com/lucasb-eyer/go-colorful v1.2.0/go.mod h1:R4dSotOR9KMtayYi1e77YzuveK+i7ruzyGqttikkLy0=
+-github.com/mattn/go-isatty v0.0.16/go.mod h1:kYGgaQfpe5nmfYZH+SKPsOc2e4SrIfOl2e/yFXSvRLM=
+ github.com/mattn/go-isatty v0.0.20 h1:xfD0iDuEKnDkl03q4limB+vH+GxLEtL/jb4xVJSWWEY=
+ github.com/mattn/go-isatty v0.0.20/go.mod h1:W+V8PltTTMOvKvAeJH7IuucS94S2C6jfK/D7dTCTo3Y=
+ github.com/mattn/go-localereader v0.0.1 h1:ygSAOl7ZXTx4RdPYinUpg6W99U8jWvWi9Ye2JC/oIi4=
+ github.com/mattn/go-localereader v0.0.1/go.mod h1:8fBrzywKY7BI3czFoHkuzRoWE9C+EiG4R1k4Cjx5p88=
+ github.com/mattn/go-runewidth v0.0.9/go.mod h1:H031xJmbD/WCDINGzjvQ9THkh0rPKHF+m2gUSrubnMI=
+ github.com/mattn/go-runewidth v0.0.12/go.mod h1:RAqKPSqVFrSLVXbA8x7dzmKdmGzieGRCM46jaSJTDAk=
+-github.com/mattn/go-runewidth v0.0.14/go.mod h1:Jdepj2loyihRzMpdS35Xk/zdY8IAYHsh153qUoGf23w=
+ github.com/mattn/go-runewidth v0.0.15 h1:UNAjwbU9l54TA3KzvqLGxwWjHmMgBUVhBiTjelZgg3U=
+ github.com/mattn/go-runewidth v0.0.15/go.mod h1:Jdepj2loyihRzMpdS35Xk/zdY8IAYHsh153qUoGf23w=
+-github.com/microcosm-cc/bluemonday v1.0.21 h1:dNH3e4PSyE4vNX+KlRGHT5KrSvjeUkoNPwEORjffHJg=
+-github.com/microcosm-cc/bluemonday v1.0.21/go.mod h1:ytNkv4RrDrLJ2pqlsSI46O6IVXmZOBBD4SaJyDwwTkM=
++github.com/microcosm-cc/bluemonday v1.0.25 h1:4NEwSfiJ+Wva0VxN5B8OwMicaJvD8r9tlJWm9rtloEg=
++github.com/microcosm-cc/bluemonday v1.0.25/go.mod h1:ZIOjCQp1OrzBBPIJmfX4qDYFuhU02nx4bn030ixfHLE=
+ github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 h1:ZK8zHtRHOkbHy6Mmr5D264iyp3TiX5OmNcI5cIARiQI=
+ github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6/go.mod h1:CJlz5H+gyd6CUWT45Oy4q24RdLyn7Md9Vj2/ldJBSIo=
+ github.com/muesli/cancelreader v0.2.2 h1:3I4Kt4BQjOR54NavqnDogx/MIoWBFa0StPA8ELUXHmA=
+ github.com/muesli/cancelreader v0.2.2/go.mod h1:3XuTXfFS2VjM+HTLZY9Ak0l6eUKfijIfMUZ4EgX0QYo=
+ github.com/muesli/reflow v0.3.0 h1:IFsN6K9NfGtjeggFP+68I4chLZV2yIKsXJFNZ+eWh6s=
+ github.com/muesli/reflow v0.3.0/go.mod h1:pbwTDkVPibjO2kyvBQRBxTWEEGDGq0FlB1BIKtnHY/8=
+-github.com/muesli/termenv v0.13.0/go.mod h1:sP1+uffeLaEYpyOTb8pLCUctGcGLnoFjSn4YJK5e2bc=
+ github.com/muesli/termenv v0.15.2 h1:GohcuySI0QmI3wN8Ok9PtKGkgkFIk7y6Vpb5PvrY+Wo=
+ github.com/muesli/termenv v0.15.2/go.mod h1:Epx+iuz8sNs7mNKhxzH4fWXGNpZwUaJKRS1noLXviQ8=
+ github.com/olekukonko/tablewriter v0.0.5 h1:P2Ga83D34wi1o9J6Wh1mRuqd4mF/x/lgBS7N7AbDhec=
+ github.com/olekukonko/tablewriter v0.0.5/go.mod h1:hPp6KlRPjbx+hW8ykQs1w3UBbZlj6HuIJcUGPhkA7kY=
+-github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+-github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+ github.com/rivo/uniseg v0.1.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
+ github.com/rivo/uniseg v0.2.0/go.mod h1:J6wj4VEh+S6ZtnVlnTBMWIodfgj8LQOQFoIToxlJtxc=
+ github.com/rivo/uniseg v0.4.6 h1:Sovz9sDSwbOz9tgUy8JpT+KgCkPYJEN/oYzlJiYTNLg=
+ github.com/rivo/uniseg v0.4.6/go.mod h1:FN3SvrM+Zdj16jyLfmOkMNblXMcoc8DfTHruCPUcx88=
+ github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f h1:MvTmaQdww/z0Q4wrYjDSCcZ78NoftLQyHBSLW/Cx79Y=
+ github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f/go.mod h1:VFvziUEIMCrT6A6tw2RFIXPXXmzXbOsSHF0DOI8ZK9Y=
+-github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
+-github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
+-github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
+-github.com/yuin/goldmark v1.2.1/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
+-github.com/yuin/goldmark v1.5.2 h1:ALmeCk/px5FSm1MAcFBAsVKZjDuMVj8Tm7FFIlMJnqU=
+-github.com/yuin/goldmark v1.5.2/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
+-github.com/yuin/goldmark-emoji v1.0.1 h1:ctuWEyzGBwiucEqxzwe0SOYDXPAucOrE9NQC18Wa1os=
+-github.com/yuin/goldmark-emoji v1.0.1/go.mod h1:2w1E6FEWLcDQkoTE+7HU6QF1F6SLlNGjRIBbIZQFqkQ=
+-golang.org/x/net v0.0.0-20221002022538-bcab6841153b/go.mod h1:YDH+HFinaLZZlnHAfSS6ZXJJ9M9t4Dl22yv3iI2vPwk=
++github.com/yuin/goldmark v1.3.7/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
++github.com/yuin/goldmark v1.5.4 h1:2uY/xC0roWy8IBEGLgB1ywIoEJFGmRrX21YQcvGZzjU=
++github.com/yuin/goldmark v1.5.4/go.mod h1:6yULJ656Px+3vBD8DxQVa3kxgyrAnzto9xy5taEt/CY=
++github.com/yuin/goldmark-emoji v1.0.2 h1:c/RgTShNgHTtc6xdz2KKI74jJr6rWi7FPgnP9GAsO5s=
++github.com/yuin/goldmark-emoji v1.0.2/go.mod h1:RhP/RWpexdp+KHs7ghKnifRoIs/Bq4nDS7tRbCkOwKY=
+ golang.org/x/net v0.17.0 h1:pVaXccu2ozPjCXewfr1S7xza/zcXTity9cCdXQYSjIM=
+ golang.org/x/net v0.17.0/go.mod h1:NxSsAGuq816PNPmqtQdLE42eU2Fs7NoRIZrHJAlaCOE=
+ golang.org/x/sync v0.6.0 h1:5BMeUDZ7vkXGfEr1x9B4bRcTH4lpkTkpdh0T/J+qjbQ=
+ golang.org/x/sync v0.6.0/go.mod h1:Czt+wKu1gCyEFDUtn0jG5QVvpJ6rzVqr5aXyt9drQfk=
+-golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+ golang.org/x/sys v0.0.0-20210809222454-d867a43fc93e/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+-golang.org/x/sys v0.0.0-20220728004956-3c1f35247d10/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+-golang.org/x/sys v0.0.0-20220811171246-fbc7d0a398ab/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+ golang.org/x/sys v0.6.0/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=
+ golang.org/x/sys v0.17.0 h1:25cE3gD+tdBA7lp7QfhuV+rJiE9YXTcS3VG1SqssI/Y=
+ golang.org/x/sys v0.17.0/go.mod h1:/VUhepiaJMQUp4+oa/7Zr1D23ma6VTLIYjOOTFZPUcA=
+-golang.org/x/term v0.0.0-20210927222741-03fcf44c2211/go.mod h1:jbD1KX2456YbFQfuXm/mYQcufACuNUgVhRMnK/tPxf8=
+ golang.org/x/term v0.17.0 h1:mkTF7LCd6WGJNL3K1Ad7kwxNfYAW6a8a8QqtMblp/4U=
+ golang.org/x/term v0.17.0/go.mod h1:lLRBjIVuehSbZlaOtGMbcMncT+aqLLLmKrsjNrUguwk=
+-golang.org/x/text v0.3.7/go.mod h1:u+2+/6zg+i71rQMx5EYifcz6MCKuco9NR6JIITiCfzQ=
+ golang.org/x/text v0.13.0 h1:ablQoSUd0tRdKxZewP80B+BaqeKJuVhuRxj/dkrun3k=
+ golang.org/x/text v0.13.0/go.mod h1:TvPlkZtksWOMsz7fbANvkp4WM8x/WCo/om8BMLbz+aE=
+-golang.org/x/tools v0.0.0-20180917221912-90fa682c2a6e/go.mod h1:n7NCudcB/nEzxVGmLbDWY5pfWTLqBcC2KZ6jyYvM4mQ=
+-gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+-gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c h1:dUUwHk2QECo/6vqA44rthZ8ie2QXMNeKRTHCNY2nXvo=
+-gopkg.in/yaml.v3 v3.0.0-20200313102051-9f266ea9e77c/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
+
+commit 3e050bbad12f880dbe960129d20663ecd836e775
+Author: Dhruv Thakur <dhruvt93@gmail.com>
+Date:   Tue Mar 26 18:23:01 2024 +0100
+
+    docs(readme): add punchout and schemas to 'in the wild'
+
+diff --git a/README.md b/README.md
+index dfe9cbb..b61b94d 100644
+--- a/README.md
++++ b/README.md
+@@ -376,22 +376,24 @@ For some Bubble Tea programs in production, see:
+ * [meteor](https://github.com/stefanlogue/meteor): a highly customizable conventional commit message tool
+ * [mods](https://github.com/charmbracelet/mods): AI on the CLI, built for pipelines
+ * [nachrichten](https://github.com/zMoooooritz/nachrichten): access up-to-date news in German provided by the [Tagesschau](https://www.tagesschau.de/)
+ * [Neon Modem Overdrive](https://github.com/mrusme/neonmodem): a BBS-style TUI client for Discourse, Lemmy, Lobste.rs and Hacker News
+ * [nom](https://github.com/guyfedwards/nom): an RSS reader and manager
+ * [Noted](https://github.com/torbratsberg/noted): a note viewer and manager
+ * [outtasync](https://github.com/dhth/outtasync): identify CloudFormation stacks that are out of sync with their template files
+ * [pathos](https://github.com/chip/pathos): a PATH environment variable editor
+ * [portal](https://github.com/ZinoKader/portal): secure transfers between computers
+ * [puffin](https://github.com/siddhantac/puffin): a TUI for hledger to manage your finances
++* [punchout](https://github.com/dhth/punchout): takes the suck out of logging time on JIRA
+ * [redis-viewer](https://github.com/SaltFishPr/redis-viewer): a Redis database browser
+ * [redis_tui](https://github.com/mat2cc/redis_tui): a Redis database browser
++* [schemas](https://github.com/dhth/schemas): lets you inspect postgres schemas in the terminal
+ * [scrabbler](https://github.com/wI2L/scrabbler): an automatic draw tool for your duplicate Scrabble games
+ * [sku](https://github.com/fedeztk/sku): Sudoku on the CLI
+ * [Slides](https://github.com/maaslalani/slides): a markdown-based presentation tool
+ * [SlurmCommander](https://github.com/CLIP-HPC/SlurmCommander): a Slurm workload manager TUI
+ * [Soft Serve](https://github.com/charmbracelet/soft-serve): a command-line-first Git server that runs a TUI over SSH
+ * [solitaire-tui](https://github.com/brianstrauch/solitaire-tui): Klondike Solitaire for the terminal
+ * [StormForge Optimize Controller](https://github.com/thestormforge/optimize-controller): a tool for experimenting with application configurations in Kubernetes
+ * [Storydb](https://github.com/grrlopes/storydb): an improved bash/zsh-style ctrl+r command history finder
+ * [STTG](https://github.com/wille1101/sttg): a teletext client for SVT, Sweden’s national public television station
+ * [sttr](https://github.com/abhimanyu003/sttr): a general-purpose text transformer
+
+commit 7199a7f29d83838b7edb4d86e024a6060624048d
+Author: Ayman Bagabas <ayman.bagabas@gmail.com>
+Date:   Fri Mar 22 14:04:05 2024 -0400
+
+    chore(examples): use lipgloss for indentation
+    
+    Fixes: a6f77ff8cdfc
+
+diff --git a/examples/go.mod b/examples/go.mod
+index 5f01de8..26f09e0 100644
+--- a/examples/go.mod
++++ b/examples/go.mod
+@@ -5,39 +5,39 @@ go 1.18
+ require (
+ 	github.com/charmbracelet/bubbles v0.18.0
+ 	github.com/charmbracelet/bubbletea v0.25.0
+ 	github.com/charmbracelet/glamour v0.6.0
+ 	github.com/charmbracelet/harmonica v0.2.0
+ 	github.com/charmbracelet/lipgloss v0.9.1
+ 	github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516
+ 	github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776
+ 	github.com/lucasb-eyer/go-colorful v1.2.0
+ 	github.com/mattn/go-isatty v0.0.20
+-	github.com/muesli/reflow v0.3.0
+ )
+ 
+ require (
+ 	github.com/alecthomas/chroma v0.10.0 // indirect
+ 	github.com/atotto/clipboard v0.1.4 // indirect
+ 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
+ 	github.com/aymanbagabas/go-udiff v0.2.0 // indirect
+ 	github.com/aymerick/douceur v0.2.0 // indirect
+ 	github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8 // indirect
+ 	github.com/dlclark/regexp2 v1.4.0 // indirect
+ 	github.com/dustin/go-humanize v1.0.1 // indirect
+ 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
+ 	github.com/gorilla/css v1.0.0 // indirect
+ 	github.com/mattn/go-localereader v0.0.1 // indirect
+ 	github.com/mattn/go-runewidth v0.0.15 // indirect
+ 	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
+ 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
+ 	github.com/muesli/cancelreader v0.2.2 // indirect
++	github.com/muesli/reflow v0.3.0 // indirect
+ 	github.com/muesli/termenv v0.15.2 // indirect
+ 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+ 	github.com/rivo/uniseg v0.4.6 // indirect
+ 	github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f // indirect
+ 	github.com/yuin/goldmark v1.5.2 // indirect
+ 	github.com/yuin/goldmark-emoji v1.0.1 // indirect
+ 	golang.org/x/net v0.17.0 // indirect
+ 	golang.org/x/sync v0.6.0 // indirect
+ 	golang.org/x/sys v0.17.0 // indirect
+ 	golang.org/x/term v0.17.0 // indirect
+diff --git a/examples/tui-daemon-combo/main.go b/examples/tui-daemon-combo/main.go
+index 0736406..876ec41 100644
+--- a/examples/tui-daemon-combo/main.go
++++ b/examples/tui-daemon-combo/main.go
+@@ -6,24 +6,26 @@ import (
+ 	"io"
+ 	"log"
+ 	"math/rand"
+ 	"os"
+ 	"time"
+ 
+ 	"github.com/charmbracelet/bubbles/spinner"
+ 	tea "github.com/charmbracelet/bubbletea"
+ 	"github.com/charmbracelet/lipgloss"
+ 	"github.com/mattn/go-isatty"
+-	"github.com/muesli/reflow/indent"
+ )
+ 
+-var helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
++var (
++	helpStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("241")).Render
++	mainStyle = lipgloss.NewStyle().MarginLeft(1)
++)
+ 
+ func main() {
+ 	var (
+ 		daemonMode bool
+ 		showHelp   bool
+ 		opts       []tea.ProgramOption
+ 	)
+ 
+ 	flag.BoolVar(&daemonMode, "d", false, "run as a daemon")
+ 	flag.BoolVar(&showHelp, "h", false, "show help")
+@@ -111,21 +113,21 @@ func (m model) View() string {
+ 			s += fmt.Sprintf("%s Job finished in %s\n", res.emoji, res.duration)
+ 		}
+ 	}
+ 
+ 	s += helpStyle("\nPress any key to exit\n")
+ 
+ 	if m.quitting {
+ 		s += "\n"
+ 	}
+ 
+-	return indent.String(s, 1)
++	return mainStyle.Render(s)
+ }
+ 
+ // processFinishedMsg is sent when a pretend process completes.
+ type processFinishedMsg time.Duration
+ 
+ // pretendProcess simulates a long-running process.
+ func runPretendProcess() tea.Msg {
+ 	pause := time.Duration(rand.Int63n(899)+100) * time.Millisecond // nolint:gosec
+ 	time.Sleep(pause)
+ 	return processFinishedMsg(pause)
+diff --git a/examples/views/main.go b/examples/views/main.go
+index d908387..7a231a2 100644
+--- a/examples/views/main.go
++++ b/examples/views/main.go
+@@ -10,38 +10,38 @@ import (
+ 	"fmt"
+ 	"math"
+ 	"strconv"
+ 	"strings"
+ 	"time"
+ 
+ 	tea "github.com/charmbracelet/bubbletea"
+ 	"github.com/charmbracelet/lipgloss"
+ 	"github.com/fogleman/ease"
+ 	"github.com/lucasb-eyer/go-colorful"
+-	"github.com/muesli/reflow/indent"
+ )
+ 
+ const (
+ 	progressBarWidth  = 71
+ 	progressFullChar  = "█"
+ 	progressEmptyChar = "░"
+ 	dotChar           = " • "
+ )
+ 
+ // General stuff for styling the view
+ var (
+ 	keywordStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("211"))
+ 	subtleStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
+ 	ticksStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("79"))
+ 	checkboxStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("212"))
+ 	progressEmpty = subtleStyle.Render(progressEmptyChar)
+-	dot           = lipgloss.NewStyle().Foreground(lipgloss.Color("236")).Render(dotChar)
++	dotStyle      = lipgloss.NewStyle().Foreground(lipgloss.Color("236")).Render(dotChar)
++	mainStyle     = lipgloss.NewStyle().MarginLeft(2)
+ 
+ 	// Gradient colors we'll use for the progress bar
+ 	ramp = makeRampStyles("#B14FFF", "#00FFA3", progressBarWidth)
+ )
+ 
+ func main() {
+ 	initialModel := model{0, false, 10, 0, 0, false, false}
+ 	p := tea.NewProgram(initialModel)
+ 	if _, err := p.Run(); err != nil {
+ 		fmt.Println("could not start program:", err)
+@@ -102,21 +102,21 @@ func (m model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
+ func (m model) View() string {
+ 	var s string
+ 	if m.Quitting {
+ 		return "\n  See you later!\n\n"
+ 	}
+ 	if !m.Chosen {
+ 		s = choicesView(m)
+ 	} else {
+ 		s = chosenView(m)
+ 	}
+-	return indent.String("\n"+s+"\n\n", 2)
++	return mainStyle.Render("\n" + s + "\n\n")
+ }
+ 
+ // Sub-update functions
+ 
+ // Update loop for the first view where you're choosing a task.
+ func updateChoices(msg tea.Msg, m model) (tea.Model, tea.Cmd) {
+ 	switch msg := msg.(type) {
+ 	case tea.KeyMsg:
+ 		switch msg.String() {
+ 		case "j", "down":
+@@ -178,22 +178,22 @@ func updateChosen(msg tea.Msg, m model) (tea.Model, tea.Cmd) {
+ 
+ // Sub-views
+ 
+ // The first view, where you're choosing a task
+ func choicesView(m model) string {
+ 	c := m.Choice
+ 
+ 	tpl := "What to do today?\n\n"
+ 	tpl += "%s\n\n"
+ 	tpl += "Program quits in %s seconds\n\n"
+-	tpl += subtleStyle.Render("j/k, up/down: select") + dot +
+-		subtleStyle.Render("enter: choose") + dot +
++	tpl += subtleStyle.Render("j/k, up/down: select") + dotStyle +
++		subtleStyle.Render("enter: choose") + dotStyle +
+ 		subtleStyle.Render("q, esc: quit")
+ 
+ 	choices := fmt.Sprintf(
+ 		"%s\n%s\n%s\n%s",
+ 		checkbox("Plant carrots", c == 0),
+ 		checkbox("Go to the market", c == 1),
+ 		checkbox("Read something", c == 2),
+ 		checkbox("See friends", c == 3),
+ 	)
+ 
+
+commit a6f77ff8cdfccb570162d5ec1af2929db0b3778c
+Author: Ayman Bagabas <ayman.bagabas@gmail.com>
+Date:   Fri Mar 22 13:55:19 2024 -0400
+
+    chore(examples): use lipgloss everywhere possible (#963)
+    
+    Lip Gloss abstracts away the color profiles logic and results in less
+    lines
+
+diff --git a/examples/altscreen-toggle/main.go b/examples/altscreen-toggle/main.go
+index 54a3f09..c05599c 100644
+--- a/examples/altscreen-toggle/main.go
++++ b/examples/altscreen-toggle/main.go
+@@ -1,24 +1,23 @@
+ package main
+ 
+ import (
+ 	"fmt"
+ 	"os"
+ 
+ 	tea "github.com/charmbracelet/bubbletea"
+-	"github.com/muesli/termenv"
++	"github.com/charmbracelet/lipgloss"
+ )
+ 
+ var (
+-	color   = termenv.EnvColorProfile().Color
+-	keyword = termenv.Style{}.Foreground(color("204")).Background(color("235")).Styled
+-	help    = termenv.Style{}.Foreground(color("241")).Styled
++	keywordStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("204")).Background(lipgloss.Color("235"))
++	helpStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
+ )
+ 
+ type model struct {
+ 	altscreen bool
+ 	quitting  bool
+ }
+ 
+ func (m model) Init() tea.Cmd {
+ 	return nil
+ }
+@@ -54,20 +53,20 @@ func (m model) View() string {
+ 		inlineMode    = " inline mode "
+ 	)
+ 
+ 	var mode string
+ 	if m.altscreen {
+ 		mode = altscreenMode
+ 	} else {
+ 		mode = inlineMode
+ 	}
+ 
+-	return fmt.Sprintf("\n\n  You're in %s\n\n\n", keyword(mode)) +
+-		help("  space: switch modes • q: exit\n")
++	return fmt.Sprintf("\n\n  You're in %s\n\n\n", keywordStyle.Render(mode)) +
++		helpStyle.Render("  space: switch modes • q: exit\n")
+ }
+ 
+ func main() {
+ 	if _, err := tea.NewProgram(model{}).Run(); err != nil {
+ 		fmt.Println("Error running program:", err)
+ 		os.Exit(1)
+ 	}
+ }
+diff --git a/examples/go.mod b/examples/go.mod
+index ee3928c..5f01de8 100644
+--- a/examples/go.mod
++++ b/examples/go.mod
+@@ -6,39 +6,39 @@ require (
+ 	github.com/charmbracelet/bubbles v0.18.0
+ 	github.com/charmbracelet/bubbletea v0.25.0
+ 	github.com/charmbracelet/glamour v0.6.0
+ 	github.com/charmbracelet/harmonica v0.2.0
+ 	github.com/charmbracelet/lipgloss v0.9.1
+ 	github.com/charmbracelet/x/exp/teatest v0.0.0-20240229115032-4b79243a3516
+ 	github.com/fogleman/ease v0.0.0-20170301025033-8da417bf1776
+ 	github.com/lucasb-eyer/go-colorful v1.2.0
+ 	github.com/mattn/go-isatty v0.0.20
+ 	github.com/muesli/reflow v0.3.0
+-	github.com/muesli/termenv v0.15.2
+ )
+ 
+ require (
+ 	github.com/alecthomas/chroma v0.10.0 // indirect
+ 	github.com/atotto/clipboard v0.1.4 // indirect
+ 	github.com/aymanbagabas/go-osc52/v2 v2.0.1 // indirect
+ 	github.com/aymanbagabas/go-udiff v0.2.0 // indirect
+ 	github.com/aymerick/douceur v0.2.0 // indirect
+ 	github.com/charmbracelet/x/exp/golden v0.0.0-20240222125807-0344fda748f8 // indirect
+ 	github.com/dlclark/regexp2 v1.4.0 // indirect
+ 	github.com/dustin/go-humanize v1.0.1 // indirect
+ 	github.com/erikgeiser/coninput v0.0.0-20211004153227-1c3628e74d0f // indirect
+ 	github.com/gorilla/css v1.0.0 // indirect
+ 	github.com/mattn/go-localereader v0.0.1 // indirect
+ 	github.com/mattn/go-runewidth v0.0.15 // indirect
+ 	github.com/microcosm-cc/bluemonday v1.0.21 // indirect
+ 	github.com/muesli/ansi v0.0.0-20230316100256-276c6243b2f6 // indirect
+ 	github.com/muesli/cancelreader v0.2.2 // indirect
++	github.com/muesli/termenv v0.15.2 // indirect
+ 	github.com/olekukonko/tablewriter v0.0.5 // indirect
+ 	github.com/rivo/uniseg v0.4.6 // indirect
+ 	github.com/sahilm/fuzzy v0.1.1-0.20230530133925-c48e322e2a8f // indirect
+ 	github.com/yuin/goldmark v1.5.2 // indirect
+ 	github.com/yuin/goldmark-emoji v1.0.1 // indirect
+ 	golang.org/x/net v0.17.0 // indirect
+ 	golang.org/x/sync v0.6.0 // indirect
+ 	golang.org/x/sys v0.17.0 // indirect
+ 	golang.org/x/term v0.17.0 // indirect
+ 	golang.org/x/text v0.13.0 // indirect
+diff --git a/examples/simple/main_test.go b/examples/simple/main_test.go
+index a2e747f..e2d9f97 100644
+--- a/examples/simple/main_test.go
++++ b/examples/simple/main_test.go
+@@ -1,29 +1,23 @@
+ package main
+ 
+ import (
+ 	"bytes"
+ 	"io"
+ 	"regexp"
+ 	"testing"
+ 	"time"
+ 
+ 	tea "github.com/charmbracelet/bubbletea"
+-	"github.com/charmbracelet/lipgloss"
+ 	"github.com/charmbracelet/x/exp/teatest"
+-	"github.com/muesli/termenv"
+ )
+ 
+-func init() {
+-	lipgloss.SetColorProfile(termenv.Ascii)
+-}
+-
+ func TestApp(t *testing.T) {
+ 	m := model(10)
+ 	tm := teatest.NewTestModel(
+ 		t, m,
+ 		teatest.WithInitialTermSize(70, 30),
+ 	)
+ 	t.Cleanup(func() {
+ 		if err := tm.Quit(); err != nil {
+ 			t.Fatal(err)
+ 		}
+diff --git a/examples/views/main.go b/examples/views/main.go
+index da3c4ec..d908387 100644
+--- a/examples/views/main.go
++++ b/examples/views/main.go
+@@ -7,42 +7,44 @@ package main
+ // implementing a progress bar from scratch here.
+ 
+ import (
+ 	"fmt"
+ 	"math"
+ 	"strconv"
+ 	"strings"
+ 	"time"
+ 
+ 	tea "github.com/charmbracelet/bubbletea"
++	"github.com/charmbracelet/lipgloss"
+ 	"github.com/fogleman/ease"
+ 	"github.com/lucasb-eyer/go-colorful"
+ 	"github.com/muesli/reflow/indent"
+-	"github.com/muesli/termenv"
+ )
+ 
+ const (
+ 	progressBarWidth  = 71
+ 	progressFullChar  = "█"
+ 	progressEmptyChar = "░"
++	dotChar           = " • "
+ )
+ 
+ // General stuff for styling the view
+ var (
+-	term          = termenv.EnvColorProfile()
+-	keyword       = makeFgStyle("211")
+-	subtle        = makeFgStyle("241")
+-	progressEmpty = subtle(progressEmptyChar)
+-	dot           = colorFg(" • ", "236")
++	keywordStyle  = lipgloss.NewStyle().Foreground(lipgloss.Color("211"))
++	subtleStyle   = lipgloss.NewStyle().Foreground(lipgloss.Color("241"))
++	ticksStyle    = lipgloss.NewStyle().Foreground(lipgloss.Color("79"))
++	checkboxStyle = lipgloss.NewStyle().Foreground(lipgloss.Color("212"))
++	progressEmpty = subtleStyle.Render(progressEmptyChar)
++	dot           = lipgloss.NewStyle().Foreground(lipgloss.Color("236")).Render(dotChar)
+ 
+ 	// Gradient colors we'll use for the progress bar
+-	ramp = makeRamp("#B14FFF", "#00FFA3", progressBarWidth)
++	ramp = makeRampStyles("#B14FFF", "#00FFA3", progressBarWidth)
+ )
+ 
+ func main() {
+ 	initialModel := model{0, false, 10, 0, 0, false, false}
+ 	p := tea.NewProgram(initialModel)
+ 	if _, err := p.Run(); err != nil {
+ 		fmt.Println("could not start program:", err)
+ 	}
+ }
+ 
+@@ -176,103 +178,95 @@ func updateChosen(msg tea.Msg, m model) (tea.Model, tea.Cmd) {
+ 
+ // Sub-views
+ 
+ // The first view, where you're choosing a task
+ func choicesView(m model) string {
+ 	c := m.Choice
+ 
+ 	tpl := "What to do today?\n\n"
+ 	tpl += "%s\n\n"
+ 	tpl += "Program quits in %s seconds\n\n"
+-	tpl += subtle("j/k, up/down: select") + dot + subtle("enter: choose") + dot + subtle("q, esc: quit")
++	tpl += subtleStyle.Render("j/k, up/down: select") + dot +
++		subtleStyle.Render("enter: choose") + dot +
++		subtleStyle.Render("q, esc: quit")
+ 
+ 	choices := fmt.Sprintf(
+ 		"%s\n%s\n%s\n%s",
+ 		checkbox("Plant carrots", c == 0),
+ 		checkbox("Go to the market", c == 1),
+ 		checkbox("Read something", c == 2),
+ 		checkbox("See friends", c == 3),
+ 	)
+ 
+-	return fmt.Sprintf(tpl, choices, colorFg(strconv.Itoa(m.Ticks), "79"))
++	return fmt.Sprintf(tpl, choices, ticksStyle.Render(strconv.Itoa(m.Ticks)))
+ }
+ 
+ // The second view, after a task has been chosen
+ func chosenView(m model) string {
+ 	var msg string
+ 
+ 	switch m.Choice {
+ 	case 0:
+-		msg = fmt.Sprintf("Carrot planting?\n\nCool, we'll need %s and %s...", keyword("libgarden"), keyword("vegeutils"))
++		msg = fmt.Sprintf("Carrot planting?\n\nCool, we'll need %s and %s...", keywordStyle.Render("libgarden"), keywordStyle.Render("vegeutils"))
+ 	case 1:
+-		msg = fmt.Sprintf("A trip to the market?\n\nOkay, then we should install %s and %s...", keyword("marketkit"), keyword("libshopping"))
++		msg = fmt.Sprintf("A trip to the market?\n\nOkay, then we should install %s and %s...", keywordStyle.Render("marketkit"), keywordStyle.Render("libshopping"))
+ 	case 2:
+-		msg = fmt.Sprintf("Reading time?\n\nOkay, cool, then we’ll need a library. Yes, an %s.", keyword("actual library"))
++		msg = fmt.Sprintf("Reading time?\n\nOkay, cool, then we’ll need a library. Yes, an %s.", keywordStyle.Render("actual library"))
+ 	default:
+-		msg = fmt.Sprintf("It’s always good to see friends.\n\nFetching %s and %s...", keyword("social-skills"), keyword("conversationutils"))
++		msg = fmt.Sprintf("It’s always good to see friends.\n\nFetching %s and %s...", keywordStyle.Render("social-skills"), keywordStyle.Render("conversationutils"))
+ 	}
+ 
+ 	label := "Downloading..."
+ 	if m.Loaded {
+-		label = fmt.Sprintf("Downloaded. Exiting in %s seconds...", colorFg(strconv.Itoa(m.Ticks), "79"))
++		label = fmt.Sprintf("Downloaded. Exiting in %s seconds...", ticksStyle.Render(strconv.Itoa(m.Ticks)))
+ 	}
+ 
+ 	return msg + "\n\n" + label + "\n" + progressbar(m.Progress) + "%"
+ }
+ 
+ func checkbox(label string, checked bool) string {
+ 	if checked {
+-		return colorFg("[x] "+label, "212")
++		return checkboxStyle.Render("[x] " + label)
+ 	}
+ 	return fmt.Sprintf("[ ] %s", label)
+ }
+ 
+ func progressbar(percent float64) string {
+ 	w := float64(progressBarWidth)
+ 
+ 	fullSize := int(math.Round(w * percent))
+ 	var fullCells string
+ 	for i := 0; i < fullSize; i++ {
+-		fullCells += termenv.String(progressFullChar).Foreground(term.Color(ramp[i])).String()
++		fullCells += ramp[i].Render(progressFullChar)
+ 	}
+ 
+ 	emptySize := int(w) - fullSize
+ 	emptyCells := strings.Repeat(progressEmpty, emptySize)
+ 
+ 	return fmt.Sprintf("%s%s %3.0f", fullCells, emptyCells, math.Round(percent*100))
+ }
+ 
+ // Utils
+ 
+-// Color a string's foreground with the given value.
+-func colorFg(val, color string) string {
+-	return termenv.String(val).Foreground(term.Color(color)).String()
+-}
+-
+-// Return a function that will colorize the foreground of a given string.
+-func makeFgStyle(color string) func(string) string {
+-	return termenv.Style{}.Foreground(term.Color(color)).Styled
+-}
+-
+ // Generate a blend of colors.
+-func makeRamp(colorA, colorB string, steps float64) (s []string) {
++func makeRampStyles(colorA, colorB string, steps float64) (s []lipgloss.Style) {
+ 	cA, _ := colorful.Hex(colorA)
+ 	cB, _ := colorful.Hex(colorB)
+ 
+ 	for i := 0.0; i < steps; i++ {
+ 		c := cA.BlendLuv(cB, i/steps)
+-		s = append(s, colorToHex(c))
++		s = append(s, lipgloss.NewStyle().Foreground(lipgloss.Color(colorToHex(c))))
+ 	}
+ 	return
+ }
+ 
+-// Convert a colorful.Color to a hexadecimal format compatible with termenv.
++// Convert a colorful.Color to a hexadecimal format.
+ func colorToHex(c colorful.Color) string {
+ 	return fmt.Sprintf("#%s%s%s", colorFloatToHex(c.R), colorFloatToHex(c.G), colorFloatToHex(c.B))
+ }
+ 
+ // Helper function for converting colors to hex. Assumes a value between 0 and
+ // 1.
+ func colorFloatToHex(f float64) (s string) {
+ 	s = strconv.FormatInt(int64(f*255), 16)
+ 	if len(s) == 1 {
+ 		s = "0" + s
+
+commit 0ebbb194aae52d4f328efae1fe236dc8e7e87cea
+Author: Christian Rocha <christian@rocha.is>
+Date:   Mon Mar 18 22:18:10 2024 -0400
+
+    chore(readme): header updates
+    
+    * Update header colors
+    * Link header to high-res art
+    * Add phorm badge
+
+diff --git a/README.md b/README.md
+index 3b64573..dfe9cbb 100644
+--- a/README.md
++++ b/README.md
+@@ -1,17 +1,18 @@
+ # Bubble Tea
+ 
+ <p>
+-    <img src="https://stuff.charm.sh/bubbletea/bubbletea-github-header-simple.png" width="313" alt="Bubble Tea Title Treatment"><br>
++    <a href="https://stuff.charm.sh/bubbletea/bubbletea-4k.png"><img src="https://github.com/charmbracelet/bubbletea/assets/25087/108d4fdb-d554-4910-abed-2a5f5586a60e" width="313" alt="Bubble Tea Title Treatment"></a><br>
+     <a href="https://github.com/charmbracelet/bubbletea/releases"><img src="https://img.shields.io/github/release/charmbracelet/bubbletea.svg" alt="Latest Release"></a>
+     <a href="https://pkg.go.dev/github.com/charmbracelet/bubbletea?tab=doc"><img src="https://godoc.org/github.com/golang/gddo?status.svg" alt="GoDoc"></a>
+     <a href="https://github.com/charmbracelet/bubbletea/actions"><img src="https://github.com/charmbracelet/bubbletea/workflows/build/badge.svg" alt="Build Status"></a>
++    <a href="https://www.phorm.ai/query?projectId=a0e324b6-b706-4546-b951-6671ea60c13f"><img src="https://stuff.charm.sh/misc/phorm-badge.svg" alt="phorm.ai"></a>
+ </p>
+ 
+ The fun, functional and stateful way to build terminal apps. A Go framework
+ based on [The Elm Architecture][elm]. Bubble Tea is well-suited for simple and
+ complex terminal applications, either inline, full-window, or a mix of both.
+ 
+ <p>
+     <img src="https://stuff.charm.sh/bubbletea/bubbletea-example.gif" width="100%" alt="Bubble Tea Example">
+ </p>
+ 
+
+commit db4cd9e9123a223b4d0157ac615c8f535d7774a5
+Author: kaifulee <cuishuang@outlook.com>
+Date:   Fri Mar 15 15:50:19 2024 +0800
+
+    chore: fix typo
+    
+    Signed-off-by: kaifulee <cuishuang@outlook.com>
+
+diff --git a/inputreader_windows.go b/inputreader_windows.go
+index 42038e1..5969721 100644
+--- a/inputreader_windows.go
++++ b/inputreader_windows.go
+@@ -16,21 +16,21 @@ import (
+ 
+ type conInputReader struct {
+ 	cancelMixin
+ 
+ 	conin       windows.Handle
+ 	cancelEvent windows.Handle
+ 
+ 	originalMode uint32
+ 
+ 	// inputEvent holds the input event that was read in order to avoid
+-	// unneccessary allocations. This re-use is possible because
++	// unnecessary allocations. This re-use is possible because
+ 	// InputRecord.Unwarp which is called inparseInputMsgFromInputRecord
+ 	// returns an data structure that is independent of the passed InputRecord.
+ 	inputEvent []coninput.InputRecord
+ }
+ 
+ var _ cancelreader.CancelReader = &conInputReader{}
+ 
+ func newInputReader(r io.Reader) (cancelreader.CancelReader, error) {
+ 	fallback := func(io.Reader) (cancelreader.CancelReader, error) {
+ 		return cancelreader.NewReader(r)
+
+commit 993fdbc70a4624fd517601fccd0bc57460506fa7
+Author: Peter Gloor <petergloor@users.noreply.github.com>
+Date:   Thu Mar 14 11:32:34 2024 +0100
+
+    docs: fix broken link in README.md
+
+diff --git a/README.md b/README.md
+index e69b36d..3b64573 100644
+--- a/README.md
++++ b/README.md
+@@ -357,21 +357,21 @@ For some Bubble Tea programs in production, see:
+ * [gh-b](https://github.com/joaom00/gh-b): a GitHub CLI extension for managing branches
+ * [gh-dash](https://www.github.com/dlvhdr/gh-dash): a GitHub CLI extension for PRs and issues
+ * [gitflow-toolkit](https://github.com/mritd/gitflow-toolkit): a GitFlow submission tool
+ * [Glow](https://github.com/charmbracelet/glow): a markdown reader, browser, and online markdown stash
+ * [go-sweep](https://github.com/maxpaulus43/go-sweep): Minesweeper in the terminal
+ * [gocovsh](https://github.com/orlangure/gocovsh): explore Go coverage reports from the CLI
+ * [got](https://github.com/fedeztk/got): a simple translator and text-to-speech app built on simplytranslate's APIs
+ * [gum](https://github.com/charmbracelet/gum): interactivity and styling for shells and shell scripts
+ * [hiSHtory](https://github.com/ddworken/hishtory): your shell history in context: synced, and queryable
+ * [httpit](https://github.com/gonetx/httpit): a rapid http(s) benchmark tool
+-* [Huh?](https://charmbracelet/huh): an interactive prompt and form toolkit
++* [Huh?](https://github.com/charmbracelet/huh): an interactive prompt and form toolkit
+ * [IDNT](https://github.com/r-darwish/idnt): a batch software uninstaller
+ * [json-log-viewer](https://github.com/hedhyw/json-log-viewer): an interactive JSON log viewer
+ * [kboard](https://github.com/CamiloGarciaLaRotta/kboard): a typing game
+ * [kplay](https://github.com/dhth/kplay): inspect messages in a Kafka topic
+ * [laboon](https://github.com/arisnacg/laboon): a Docker-desktop-style container manager
+ * [mc](https://github.com/minio/mc): the official [MinIO](https://min.io) client
+ * [mergestat](https://github.com/mergestat/mergestat): run SQL queries on git repositories
+ * [meteor](https://github.com/stefanlogue/meteor): a highly customizable conventional commit message tool
+ * [mods](https://github.com/charmbracelet/mods): AI on the CLI, built for pipelines
+ * [nachrichten](https://github.com/zMoooooritz/nachrichten): access up-to-date news in German provided by the [Tagesschau](https://www.tagesschau.de/)
+
+commit e1c8e54c924bbd9a4ae04f34b6c86e41643d01e9
+Author: Austin Schey <aschey13@gmail.com>
+Date:   Wed Mar 13 10:24:49 2024 -0500
+
+    chore(docs): update delve information (#597)
+
+diff --git a/README.md b/README.md
+index 0688df1..e69b36d 100644
+--- a/README.md
++++ b/README.md
+@@ -259,29 +259,35 @@ there are [Go Docs][docs].
+ 
+ ## Debugging
+ 
+ ### Debugging with Delve
+ 
+ Since Bubble Tea apps assume control of stdin and stdout, you’ll need to run
+ delve in headless mode and then connect to it:
+ 
+ ```bash
+ # Start the debugger
+-$ dlv debug --headless .
+-API server listening at: 127.0.0.1:34241
++$ dlv debug --headless --api-version=2 --listen=127.0.0.1:43000 .
++API server listening at: 127.0.0.1:43000
+ 
+ # Connect to it from another terminal
+-$ dlv connect 127.0.0.1:34241
++$ dlv connect 127.0.0.1:43000
+ ```
+ 
+-Note that the default port used will vary on your system and per run, so
+-actually watch out what address the first `dlv` run tells you to connect to.
++If you do not explicitly supply the `--listen` flag, the port used will vary
++per run, so passing this in makes the debugger easier to use from a script 
++or your IDE of choice. 
++
++Additionally, we pass in `--api-version=2` because delve defaults to version 1 
++for backwards compatibility reasons. However, delve recommends using version 2 
++for all new development and some clients may no longer work with version 1.
++For more information, see the [Delve documentation](https://github.com/go-delve/delve/tree/master/Documentation/api).
+ 
+ ### Logging Stuff
+ 
+ You can’t really log to stdout with Bubble Tea because your TUI is busy
+ occupying that! You can, however, log to a file by including something like
+ the following prior to starting your Bubble Tea program:
+ 
+ ```go
+ if len(os.Getenv("DEBUG")) > 0 {
+ 	f, err := tea.LogToFile("debug.log", "debug")
